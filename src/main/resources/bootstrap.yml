@@ -1,0 +1,35 @@
+server:
+  port: 10088
+spring:
+#  mvc:
+#    view:
+#      prefix: /WEB-INF
+#      suffix: .jsp
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 2048MB
+      max-request-size: 2048MB
+  fileSuffixs: .jar,.war,.gz,.tar,.zip,.rar,.doc,.docx,.pptx,.ppt,.xls,.xlsx,.avi,.mp3,.mp4
+  fileProperty:
+  #    allowExtensions:
+      deniedExtensions:
+        .exe,
+        .dll,
+        .com,
+        .ocx,
+        .vxd,
+        .sys,
+        .vbs,
+        .js,
+        .php,
+        .asp,
+        .jsp,
+        .html,
+        .hta,
+        .htm,
+        .java,
+        .vbe,
+        .jse,
+        .wsh,
+        .wsf

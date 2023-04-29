@@ -1,0 +1,64 @@
+.pull-center {
+    text-align: center;
+    vertical-align: middle
+}
+#mask {
+    position: absolute;
+    top: 0px;
+    filter: alpha(opacity=60);
+    background-color: #777;
+    z-index: 0;
+    left: 0px;
+    opacity: 0.0;
+    -moz-opacity: 0.5;
+}
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.checkboxThree label {
+    display: block;
+    width: 40px;
+    height: 16px;
+    border-radius: 50px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    z-index: 1;
+    left: 12px;
+    background: #ddd;
+}
+.checkboxThree input[type=checkbox]:checked + label {
+    left: 50px;
+    background: #26ca28;
+}
+.selectCss {
+    width: 100px;
+    font-size: 15px;
+    height: 3%;
+    display: inline;
+}
+.labelCss {
+    margin-left: 10px;
+}
+.successCss {
+    color: green;
+    font-family: Tahoma, Verdana, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+.errorCss {
+    color: red;
+    font-family: Tahoma, Verdana, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
